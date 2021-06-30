@@ -1,0 +1,27 @@
+.quote-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-items: baseline;
+    justify-items: end;
+
+}
+
+.quote p {
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.author {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    margin-top: 0;
+
+}
