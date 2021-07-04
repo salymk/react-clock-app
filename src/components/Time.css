@@ -1,11 +1,15 @@
-.greeting {
+/* Greeting */
+
+.greeting-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: end;
+    padding: 0 1em 0 1em;
+
 }
 
-.greeting h2 {
+.greeting {
     margin-left: .5em;
     font-family: Inter;
     font-size: 15px;
@@ -15,7 +19,13 @@
     text-transform: uppercase;
 }
 
-.greeting svg {
+.greeting-container svg {
     margin-right: .7em;
+
+}
+
+/* Time */
+.time-container {
+    padding: 0 1em 0 1em;
 
 }
