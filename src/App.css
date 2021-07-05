@@ -42,6 +42,11 @@ main {
 
 .greeting-container h2 {
   margin: 0;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin-left: 10px;
 }
 
 .time {
