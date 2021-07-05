@@ -21,6 +21,10 @@ main {
   border: 2px dashed green;
 }
 
+.quote-container svg {
+  margin-left: 1em;
+}
+
 .quote {
   font-size: 12px;
   line-height: 22px;
@@ -96,11 +100,14 @@ main {
 
 .more-info-btn span {
   margin-right: 1.5em;
-  font-size: 16px;
+  font-size: 12px;
   margin-left: 1em;
-  font-family: Inter;
-  font-style: normal;
   font-weight: bold;
   line-height: 14px;
+  letter-spacing: 3.75px;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
 
