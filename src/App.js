@@ -32,7 +32,7 @@ function App() {
                 fillRule="nonzero"
               />
             </svg>
-            <h2>GOOD MORNING, IT'S CURRENTLY</h2>
+            <h2>GOOD MORNING</h2>
           </div>
           <div className="time">
             <h1>11:37</h1>
@@ -42,7 +42,9 @@ function App() {
             <h2>IN LONDON, UK</h2>
           </div>
         </div>
-        <button type="button">More</button>
+        <button className="refresh-btn" type="button">
+          More
+        </button>
       </div>
     </main>
   );
