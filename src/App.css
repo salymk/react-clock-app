@@ -16,7 +16,7 @@ main {
 
 .quote-container {
   display: grid;
-  grid-template-columns: 90% 10%;
+  grid-template-columns: 85% 15%;
   align-items: baseline;
   border: 2px dashed green;
 }
@@ -58,6 +58,7 @@ main {
 .time h1 {
   margin: 0;
   margin-top: 0.2em;
+  margin-bottom: .2em;
   font-size: 100px;
   line-height: 100px;
   font-weight: bold;
@@ -73,9 +74,33 @@ main {
 
 .location h2 {
   margin: 0;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.refresh-btn {
+.more-info-btn {
   margin-top: 5em;
+}
+
+.more-info-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 2em;
+  border: 0px white;
+  padding: 5px 5px;
+}
+
+.more-info-btn span {
+  margin-right: 1.5em;
+  font-size: 16px;
+  margin-left: 1em;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 14px;
 }
 
