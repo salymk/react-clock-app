@@ -11,6 +11,7 @@ main {
   justify-content: space-between;
   padding: 2em;
   border: 2px dashed green;
+  font-family: Inter;
 }
 
 .quote-container {
@@ -18,7 +19,15 @@ main {
   grid-template-columns: 90% 10%;
   align-items: baseline;
   border: 2px dashed green;
+}
 
+.quote {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.author {
+  font-weight: bold;
 }
 
 .time-container {
@@ -42,7 +51,7 @@ main {
 }
 
 .time h1 {
-  font-size: 8em;
+  font-size: 7em;
   margin: 0;
 }
 
