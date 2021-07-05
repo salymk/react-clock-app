@@ -64,6 +64,13 @@ main {
   letter-spacing: -2.5px;
 }
 
+.time span {
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
 .location h2 {
   margin: 0;
 }
