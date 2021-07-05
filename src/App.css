@@ -9,8 +9,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2em;
-  border: 2px dashed green;
+  margin: 1.5em;
+  /* border: 2px dashed green; */
   font-family: Inter;
 }
 
@@ -18,7 +18,7 @@ main {
   display: grid;
   grid-template-columns: 85% 15%;
   align-items: baseline;
-  border: 2px dashed green;
+  /* border: 2px dashed green; */
   max-width: 700px;
 }
 
@@ -36,7 +36,7 @@ main {
 }
 
 .time-container {
-  border: 2px dashed green;
+  /* border: 2px dashed green; */
 }
 
 .greeting-container {
@@ -148,6 +148,11 @@ main {
 
 
 @media screen and (min-width: 1440px) {
+
+  .quote-container {
+    margin-left: 10em;
+  }
+
   .quote, .author {
     font-size: 18px;
     line-height: 28px;
@@ -163,6 +168,15 @@ main {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 4.8px; 
+  }
+
+  .time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1024px;
+    margin-left: 10em;
   }
 
   .time h1 {
@@ -181,5 +195,7 @@ main {
     line-height: 28px;
     letter-spacing: 5px;
   }
+
+
 
 }
