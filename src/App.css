@@ -61,8 +61,8 @@ main {
 
 .time h1 {
   margin: 0;
-  margin-top: 0.2em;
-  margin-bottom: .2em;
+  /* margin-top: 0.2em;
+  margin-bottom: .2em; */
   font-size: 100px;
   line-height: 100px;
   font-weight: bold;
@@ -99,9 +99,9 @@ main {
 }
 
 .more-info-btn span {
-  margin-right: 1.5em;
+  margin-right: .7em;
+  margin-left: .7em;
   font-size: 12px;
-  margin-left: 1em;
   font-weight: bold;
   line-height: 14px;
   letter-spacing: 3.75px;
@@ -111,3 +111,38 @@ main {
   opacity: 0.5;
 }
 
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  .quote, .author {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .greeting-container h2, .location h2 {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3.6px;
+  }
+
+  .time h1 {
+    font-size: 175px;
+    line-height: 175px;
+    letter-spacing: -4.375px;
+  }
+
+  .time span {
+    font-size: 32px;
+    line-height: 28px;
+  }
+
+  .more-info-btn span {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 5px;
+  }
+
+
+
+}
