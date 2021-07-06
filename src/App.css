@@ -175,8 +175,9 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    max-width: 1024px;
+    max-width: 1200px;
     margin-left: 10em;
+    margin-bottom: 4em;
   }
 
   .time h1 {
@@ -195,7 +196,5 @@ main {
     line-height: 28px;
     letter-spacing: 5px;
   }
-
-
 
 }
