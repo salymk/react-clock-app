@@ -1,17 +1,24 @@
+
+body {
+  margin: 0;
+}
 .app-container {
-  color: black;
+  color: white;
 }
 
 /* Layout */
 
 main {
-  height: 92vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1.5em;
   /* border: 2px dashed green; */
   font-family: Inter;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/mobile/bg-image-daytime.jpg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 .quote-container {
@@ -20,6 +27,7 @@ main {
   align-items: baseline;
   /* border: 2px dashed green; */
   max-width: 700px;
+  padding: 2em;
 }
 
 .quote-container svg {
@@ -37,6 +45,7 @@ main {
 
 .time-container {
   /* border: 2px dashed green; */
+  padding: 2em;
 }
 
 .greeting-container {
@@ -112,6 +121,10 @@ main {
   opacity: 0.5;
 }
 
+
+.error {
+  color: red;
+}
 
 /* Media Queries */
 
