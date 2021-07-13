@@ -118,14 +118,14 @@ svg circle {
   align-items: center;
   border-radius: 2em;
   border: 0px white;
-  padding: 5px 5px;
+  padding: 4px 4px;
   margin-top: 5em;
   cursor: pointer;
 }
 
 .more-info-btn span {
-  margin-right: .7em;
-  margin-left: .7em;
+  margin-right: 0.9em;
+  margin-left: 1.5em;
   font-size: 12px;
   font-weight: bold;
   line-height: 14px;
@@ -173,10 +173,16 @@ svg circle {
     line-height: 28px;
   }
 
+  .more-info-btn {
+    padding: 7px 7px;
+  }
+
   .more-info-btn span {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 5px;
+    margin-left: 0.7em;
+    margin-right: .7em;
   }
 
 }
@@ -231,6 +237,10 @@ svg circle {
   .time span {
     font-size: 40px;
     line-height: 28px;
+  }
+
+  .more-info-btn {
+    padding: 8px 8px;
   }
 
   .more-info-btn span {
