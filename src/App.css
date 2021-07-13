@@ -100,16 +100,16 @@ main {
 }
 
 
-button:hover svg circle {
+button:hover #arrow-svg circle {
   fill: #999999;
 }
 
-svg {
+#arrow-svg {
   transform: scale(-1);
 }
 
-svg circle {
-  transition: .3s;
+#arrow-svg circle {
+  transition: .3s linear;
 }
 
 .more-info-btn {
