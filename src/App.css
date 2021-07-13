@@ -141,7 +141,10 @@ svg circle {
 
 @media screen and (min-width: 768px) {
   main {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/tablet/bg-image-daytime.jpg") center center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   .quote, .author {
@@ -210,7 +213,7 @@ svg circle {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    max-width: 1200px;
+    max-width: 1100px;
     margin-left: 10em;
     margin-bottom: 4em;
   }
