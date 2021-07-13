@@ -1,7 +1,11 @@
 
+
+
+
 body {
   margin: 0;
 }
+
 .app-container {
   color: white;
 }
@@ -95,6 +99,15 @@ main {
   text-transform: uppercase;
 }
 
+
+button:hover svg circle {
+  fill: #999999;
+}
+
+svg circle {
+  transition: .3s;
+}
+
 .more-info-btn {
   display: flex;
   flex-direction: row;
@@ -103,10 +116,7 @@ main {
   border: 0px white;
   padding: 5px 5px;
   margin-top: 5em;
-}
-
-.more-info-btn span:hover {
-  color: green
+  cursor: pointer;
 }
 
 .more-info-btn span {
