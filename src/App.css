@@ -104,6 +104,10 @@ button:hover svg circle {
   fill: #999999;
 }
 
+svg {
+  transform: scale(-1);
+}
+
 svg circle {
   transition: .3s;
 }
