@@ -96,16 +96,17 @@ main {
 }
 
 .more-info-btn {
-  margin-top: 5em;
-}
-
-.more-info-btn {
   display: flex;
   flex-direction: row;
   align-items: center;
   border-radius: 2em;
   border: 0px white;
   padding: 5px 5px;
+  margin-top: 5em;
+}
+
+.more-info-btn span:hover {
+  color: green
 }
 
 .more-info-btn span {
@@ -129,6 +130,10 @@ main {
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
+  main {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/tablet/bg-image-daytime.jpg") center center;
+  }
+  
   .quote, .author {
     font-size: 18px;
     line-height: 28px;
@@ -161,6 +166,13 @@ main {
 
 
 @media screen and (min-width: 1440px) {
+
+  main {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
   .quote-container {
     margin-left: 10em;
