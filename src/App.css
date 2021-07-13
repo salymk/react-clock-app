@@ -34,8 +34,18 @@ main {
   padding: 2em;
 }
 
-.quote-container svg {
+.quote-container #refresh-svg {
   margin-left: 1em;
+  cursor: pointer;
+}
+
+
+#refresh-svg:hover path {
+  fill: lightgray
+}
+
+#refresh-svg path {
+  transition: .3s linear;
 }
 
 .quote {
