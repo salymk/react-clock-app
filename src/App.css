@@ -18,7 +18,7 @@ main {
   display: grid;
   grid-template-rows: 60% 40%;
   grid-template-columns: 100%;
-  align-items: end;
+  /* align-items: end; */
   /* display: flex;
   flex-direction: column;
   justify-content: space-between; */
@@ -119,9 +119,15 @@ button:hover #arrow-svg circle {
   fill: #999999;
 }
 
-#arrow-svg {
+.arrow-svg {
   transform: scale(-1);
 }
+
+.arrow-svg-up {
+  transform: scale(1);
+}
+
+
 
 #arrow-svg circle {
   transition: .3s linear;
@@ -216,9 +222,9 @@ button:hover #arrow-svg circle {
   color: red;
 }
 
-/* .hide {
+.hide {
   display: none;
-} */
+}
 
 /* Media Queries */
 
@@ -402,6 +408,15 @@ button:hover #arrow-svg circle {
     top: 0;
     bottom: 0;
     left: 40em;
+  }
+
+  
+  .more-info-details:nth-child(2) {
+    margin-left: 3em;
+  }  
+  
+  .more-info-details:nth-child(4) {
+    margin-left: 3em;
   }
 
 }

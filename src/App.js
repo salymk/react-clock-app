@@ -7,21 +7,23 @@ import Location from './components/Location';
 import Time from './components/Time';
 
 function App() {
+  const [toggle, setToggle] = useState(false);
+  console.log(toggle ? 'truth' : 'false');
   return (
     <>
       <main className="app-container">
-        <Quote toggle={false} />
+        <Quote toggle={toggle} />
         <div className="time-container">
           <Time />
           <div>
             <button
-              onClick={() => console.log('Heloo')}
+              onClick={() => setToggle(!toggle)}
               className="more-info-btn"
               type="button"
             >
-              <span> More </span>
+              <span> {toggle ? 'More' : 'Less'} </span>
               <svg
-                id="arrow-svg"
+                className={`arrow-svg ${toggle ? '' : 'arrow-svg-up'}`}
                 width="40"
                 height="40"
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +36,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="more-info">
+        <div className={`more-info ${toggle ? 'hide' : ''}`}>
           <div className="more-info-container">
             <div className="more-info-details">
               <p>Current Timezone</p>
