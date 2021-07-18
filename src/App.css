@@ -194,6 +194,23 @@ button:hover #arrow-svg circle {
   text-transform: uppercase;
 }
 
+.more-info-details:nth-child(1) {
+  order: 1;
+}
+
+.more-info-details:nth-child(2) {
+  order: 3;
+}
+
+.more-info-details:nth-child(3) {
+  order: 2;
+}
+
+
+.more-info-details:nth-child(4) {
+  order: 4;
+}
+
 
 .error {
   color: red;
@@ -259,10 +276,8 @@ button:hover #arrow-svg circle {
   }
   
   .more-info-details {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
     margin: 1em 1em;
   }
   
@@ -281,6 +296,23 @@ button:hover #arrow-svg circle {
     line-height: 28px;
     letter-spacing: 2.6px;
     text-transform: uppercase;
+  }
+
+  .more-info-details:nth-child(1) {
+    order: 1;
+  }
+  
+  .more-info-details:nth-child(2) {
+    order: 2;
+  }
+  
+  .more-info-details:nth-child(3) {
+    order: 3;
+  }
+  
+  
+  .more-info-details:nth-child(4) {
+    order: 4;
   }
 
 }

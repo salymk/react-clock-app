@@ -41,12 +41,12 @@ function App() {
               <h4>Europe/London</h4>
             </div>
             <div className="more-info-details">
-              <p>Day of the year</p>
-              <h4>295</h4>
-            </div>
-            <div className="more-info-details">
               <p>Day of the week</p>
               <h4>5</h4>
+            </div>
+            <div className="more-info-details">
+              <p>Day of the year</p>
+              <h4>295</h4>
             </div>
             <div className="more-info-details">
               <p>Week number</p>
