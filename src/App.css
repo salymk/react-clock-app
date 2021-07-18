@@ -64,7 +64,7 @@ main {
 
 .time-container {
   /* border: 2px dashed green; */
-  padding: 2em;
+  margin: 0 0 2em 2em;
 }
 
 .greeting-container {
@@ -218,6 +218,11 @@ button:hover #arrow-svg circle {
     line-height: 28px;
   }
 
+  .time-container {
+    margin: 0 0 3.5em 3em;
+
+  }
+
   .greeting-container h2, .location h2 {
     font-size: 18px;
     line-height: 28px;
@@ -248,16 +253,15 @@ button:hover #arrow-svg circle {
   }
 
   .more-info-container {
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: normal;
+    margin: 0 0 0 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   
   .more-info-details {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
     margin: 1em 1em;
   }
@@ -268,14 +272,14 @@ button:hover #arrow-svg circle {
   
   .more-info-details h4 {
     font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 40px;
+    line-height: 48px;
   }
   
   .more-info-details p {
-    font-size: 10px;
+    font-size: 13px;
     line-height: 28px;
-    letter-spacing: 2px;
+    letter-spacing: 2.6px;
     text-transform: uppercase;
   }
 
