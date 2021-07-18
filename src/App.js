@@ -52,6 +52,7 @@ function App() {
               <p>Week number</p>
               <h4>42</h4>
             </div>
+            <div className="border" />
           </div>
         </div>
       </main>

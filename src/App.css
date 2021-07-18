@@ -286,7 +286,6 @@ button:hover #arrow-svg circle {
   }
   
   .more-info-details h4 {
-    font-weight: bold;
     font-size: 40px;
     line-height: 48px;
   }
@@ -295,7 +294,6 @@ button:hover #arrow-svg circle {
     font-size: 13px;
     line-height: 28px;
     letter-spacing: 2.6px;
-    text-transform: uppercase;
   }
 
   .more-info-details:nth-child(1) {
@@ -377,6 +375,33 @@ button:hover #arrow-svg circle {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 5px;
+  }
+
+  .more-info-container {
+    position: relative;
+  }
+
+  .more-info-details h4 {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 68px;
+  }
+  
+  .more-info-details p {
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 3px;
+  }
+
+  .border {
+    border-right: 1px solid;
+    position: absolute;
+    background: #303030;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    top: 0;
+    bottom: 0;
+    left: 40em;
   }
 
 }
