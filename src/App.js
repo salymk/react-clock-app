@@ -5,13 +5,14 @@ import axios from 'axios';
 import Quote from './components/Quote';
 import Location from './components/Location';
 import Time from './components/Time';
+import MoreInfo from './components/MoreInfo';
 
 function App() {
   const [toggle, setToggle] = useState(false);
   console.log(toggle ? 'truth' : 'false');
   return (
     <>
-      <main className="app-container">
+      <main className={`app-container ${toggle ? '' : 'app-container-toggle'}`}>
         <Quote toggle={toggle} />
         <div className="time-container">
           <Time />
@@ -36,27 +37,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className={`more-info ${toggle ? 'hide' : ''}`}>
-          <div className="more-info-container">
-            <div className="more-info-details">
-              <p>Current Timezone</p>
-              <h4>Europe/London</h4>
-            </div>
-            <div className="more-info-details">
-              <p>Day of the week</p>
-              <h4>5</h4>
-            </div>
-            <div className="more-info-details">
-              <p>Day of the year</p>
-              <h4>295</h4>
-            </div>
-            <div className="more-info-details">
-              <p>Week number</p>
-              <h4>42</h4>
-            </div>
-            <div className="border" />
-          </div>
-        </div>
+        <MoreInfo toggle={toggle} />
       </main>
     </>
   );
