@@ -4,15 +4,16 @@
 
 body {
   margin: 0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/mobile/bg-image-daytime.jpg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.app-container {
-  color: white;
-}
 
 /* Layout */
 
-main {
+.app-container {
   position: relative;
   min-height: 100vh;
   display: grid;
@@ -24,10 +25,15 @@ main {
   justify-content: space-between; */
   /* border: 2px dashed green; */
   font-family: Inter;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/mobile/bg-image-daytime.jpg") center center;
+  /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/mobile/bg-image-daytime.jpg") center center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center; */
   color: white;
+}
+
+.app-container-toggle {
+  align-items: end;
 }
 
 .quote-container {
@@ -65,6 +71,10 @@ main {
 .time-container {
   /* border: 2px dashed green; */
   margin: 0 0 2em 2em;
+}
+
+.time {
+  margin: 20px 0 20px 0;
 }
 
 .greeting-container {
@@ -115,7 +125,7 @@ main {
 }
 
 
-button:hover #arrow-svg circle {
+button:hover .arrow-svg circle {
   fill: #999999;
 }
 
@@ -161,11 +171,12 @@ button:hover #arrow-svg circle {
   position: absolute;
   display: grid;
   align-items: center;
-  background: #F2F2F2;
+  background-color: #ffff;
   width: 100%;
   bottom: 0;
   height: 40%;
   color: #303030;
+  opacity: .95;
 }
 
 .more-info-container {
@@ -226,14 +237,18 @@ button:hover #arrow-svg circle {
   display: none;
 }
 
+.border {
+  display: none;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
   main {
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center; */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
   }
   
   .quote, .author {
@@ -326,9 +341,9 @@ button:hover #arrow-svg circle {
 
   main {
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center;
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
 
   .quote-container {
@@ -359,7 +374,7 @@ button:hover #arrow-svg circle {
     align-items: flex-end;
     max-width: 1100px;
     margin-left: 10em;
-    margin-bottom: 4em;
+    margin-bottom: 7em;
   }
 
   .time h1 {
@@ -385,6 +400,7 @@ button:hover #arrow-svg circle {
 
   .more-info-container {
     position: relative;
+    margin-left: 10em;
   }
 
   .more-info-details h4 {
@@ -400,6 +416,7 @@ button:hover #arrow-svg circle {
   }
 
   .border {
+    display: block;
     border-right: 1px solid;
     position: absolute;
     background: #303030;

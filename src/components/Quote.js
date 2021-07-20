@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-nested-ternary */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { QueryClient, useQuery } from 'react-query';
+import { useQuery } from 'react-query';
 
 // const fetchQuotes = async () => {
 //   const { data } = await axios.get('https://api.quotable.io/random');
@@ -18,7 +19,7 @@ const useQuotes = () =>
     { enabled: true, refetchOnWindowFocus: false }
   );
 
-const Quote = () => {
+const Quote = ({ toggle }) => {
   const { data, isLoading, isError, error, refetch } = useQuotes();
 
   if (isLoading) {
@@ -27,12 +28,12 @@ const Quote = () => {
   if (isError) {
     return `Error: ${error.message}`;
   }
+  // console.log(toggle);
 
   const fetchNewQuote = () => console.log(refetch());
-
   return (
     <>
-      <div className="quote-container">
+      <div className={`quote-container ${toggle ? '' : 'hide'}`}>
         <div className="quote">
           <>
             <p className="description">“{data.content}”</p>
