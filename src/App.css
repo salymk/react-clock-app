@@ -4,10 +4,6 @@
 
 body {
   margin: 0;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/mobile/bg-image-daytime.jpg") center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 
@@ -20,15 +16,11 @@ body {
   grid-template-rows: 60% 40%;
   grid-template-columns: 100%;
   /* align-items: end; */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
-  /* border: 2px dashed green; */
   font-family: Inter;
-  /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/mobile/bg-image-daytime.jpg") center center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/mobile/bg-image-daytime.jpg") center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; */
+  background-position: center;
   color: white;
 }
 
@@ -244,11 +236,11 @@ button:hover .arrow-svg circle {
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
-  main {
+  .app-container {
     min-height: 100vh;
-    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center; */
-    /* background-size: cover;
-    background-repeat: no-repeat; */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   .quote, .author {
@@ -339,11 +331,11 @@ button:hover .arrow-svg circle {
 
 @media screen and (min-width: 1440px) {
 
-  main {
+  .app-container {
     min-height: 100vh;
-    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./assets/desktop/bg-image-daytime.jpg") center center;
     background-size: cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
   }
 
   .quote-container {
