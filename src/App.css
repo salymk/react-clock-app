@@ -376,6 +376,12 @@ button:hover .arrow-svg circle {
 
   .quote-container {
     margin-left: 10em;
+    padding: 4em 0 0 0;
+
+  }
+
+  .time-container {
+    padding: 0;
   }
 
   .quote, .author {
