@@ -16,11 +16,21 @@ body {
   grid-template-rows: 60% 40%;
   grid-template-columns: 100%;
   font-family: Inter;
+  color: white;
+}
+
+.bg-day {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/mobile/bg-image-daytime.jpg") center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: white;
+}
+
+.bg-night {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/mobile/bg-image-nighttime.jpg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .app-container-toggle {
@@ -238,9 +248,20 @@ button:hover .arrow-svg circle {
 @media screen and (min-width: 768px) {
   .app-container {
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center;
+  }
+
+  .bg-day {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/tablet/bg-image-daytime.jpg") center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .bg-night {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/tablet/bg-image-nighttime.jpg") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .quote, .author {
@@ -333,9 +354,20 @@ button:hover .arrow-svg circle {
 
   .app-container {
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./assets/desktop/bg-image-daytime.jpg") center center;
+  }
+
+  .bg-day {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .bg-night {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .quote-container {
