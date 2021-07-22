@@ -2,17 +2,37 @@ import React, { useEffect, useState } from 'react';
 import { useQuery } from 'react-query';
 import './App.css';
 import axios from 'axios';
+import { DateTime } from 'luxon';
 import Quote from './components/Quote';
 import Location from './components/Location';
 import Time from './components/Time';
 import MoreInfo from './components/MoreInfo';
+import useTime from './hooks/useTime';
 
 function App() {
   const [toggle, setToggle] = useState(false);
-  console.log(toggle ? 'truth' : 'false');
+
+  const { data, isLoading, isError, error } = useTime();
+
+  if (isLoading) {
+    return 'Loading...';
+  }
+
+  if (isError) {
+    return `Error: ${error.message}`;
+  }
+
+  const time = DateTime.fromSeconds(data.unixtime);
+  const currentHour = time.hour;
+  const dayTime = currentHour > 5 && currentHour < 18;
+
   return (
     <>
-      <main className={`app-container ${toggle ? '' : 'app-container-toggle'}`}>
+      <main
+        className={`app-container ${toggle ? 'app-container-toggle' : ''} ${
+          dayTime ? 'bg-day' : 'bg-night'
+        }`}
+      >
         <Quote toggle={toggle} />
         <div className="time-container">
           <Time />
@@ -22,9 +42,9 @@ function App() {
               className="more-info-btn"
               type="button"
             >
-              <span> {toggle ? 'More' : 'Less'} </span>
+              <span> {toggle ? 'Less' : 'More'} </span>
               <svg
-                className={`arrow-svg ${toggle ? '' : 'arrow-svg-up'}`}
+                className={`arrow-svg ${toggle ? 'arrow-svg-up' : ''}`}
                 width="40"
                 height="40"
                 xmlns="http://www.w3.org/2000/svg"
