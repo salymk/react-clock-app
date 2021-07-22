@@ -33,7 +33,7 @@ const Quote = ({ toggle }) => {
   const fetchNewQuote = () => console.log(refetch());
   return (
     <>
-      <div className={`quote-container ${toggle ? '' : 'hide'}`}>
+      <div className={`quote-container ${toggle ? 'hide' : ''}`}>
         <div className="quote">
           <>
             <p className="description">“{data.content}”</p>

@@ -15,7 +15,7 @@ const MoreInfo = ({ toggle }) => {
 
   return (
     <>
-      <div className={`more-info ${toggle ? 'hide' : ''}`}>
+      <div className={`more-info ${toggle ? '' : 'hide'}`}>
         <div className="more-info-container">
           <div className="more-info-details">
             <p>Current Timezone</p>
