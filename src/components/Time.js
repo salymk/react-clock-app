@@ -53,6 +53,7 @@ const Time = () => {
               : isAfternoon
               ? 'Good Afternoon'
               : 'Good Evening'}
+            {window.innerWidth > 767 ? ", it's currently" : ''}
           </h2>
         </div>
         <div className="time">
