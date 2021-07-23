@@ -1,13 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-nested-ternary */
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import axios from 'axios';
 import { useQuery } from 'react-query';
-
-// const fetchQuotes = async () => {
-//   const { data } = await axios.get('https://api.quotable.io/random');
-//   return data;
-// };
 
 const useQuotes = () =>
   useQuery(
@@ -28,9 +23,7 @@ const Quote = ({ toggle }) => {
   if (isError) {
     return `Error: ${error.message}`;
   }
-  // console.log(toggle);
 
-  const fetchNewQuote = () => console.log(refetch());
   return (
     <>
       <div className={`quote-container ${toggle ? 'hide' : ''}`}>

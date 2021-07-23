@@ -1,14 +1,10 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
-import { useQuery } from 'react-query';
-import axios from 'axios';
 import { DateTime } from 'luxon';
 import Location from './Location';
 import useTime from '../hooks/useTime';
 
 const Time = () => {
-  const [greeting, setGreeting] = React.useState('');
-
   const { data, isLoading, isError, error } = useTime();
 
   if (isLoading) {
