@@ -2,7 +2,7 @@
 import React from 'react';
 import useTime from '../hooks/useTime';
 
-const MoreInfo = ({ toggle }) => {
+const MoreInfo = ({ toggle, bgDayOrNight }) => {
   const { data, isError, isLoading, error } = useTime();
 
   if (isLoading) {
@@ -15,7 +15,11 @@ const MoreInfo = ({ toggle }) => {
 
   return (
     <>
-      <div className={`more-info ${toggle ? '' : 'hide'}`}>
+      <div
+        className={`more-info ${toggle ? '' : 'hide'} ${
+          bgDayOrNight ? 'more-info-day' : 'more-info-night'
+        }`}
+      >
         <div className="more-info-container">
           <div className="more-info-details">
             <p>Current Timezone</p>

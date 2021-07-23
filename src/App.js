@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { useQuery } from 'react-query';
+import React, { useState } from 'react';
 import './App.css';
-import axios from 'axios';
 import { DateTime } from 'luxon';
 import Quote from './components/Quote';
-import Location from './components/Location';
 import Time from './components/Time';
 import MoreInfo from './components/MoreInfo';
 import useTime from './hooks/useTime';
@@ -57,7 +54,7 @@ function App() {
             </button>
           </div>
         </div>
-        <MoreInfo toggle={toggle} />
+        <MoreInfo toggle={toggle} bgDayOrNight={dayTime} />
       </main>
     </>
   );
