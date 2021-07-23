@@ -48,10 +48,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Design preview for daytime desktop layout](src\assets\react-clock-app-desktop-daytime.jpg)
-![Design preview for nighttime desktop layout](src\assets\react-clock-app-desktop-nighttime.jpg)
-![Design preview for daytime tablet layout](src\assets\react-clock-app-mobile-daytime.jpg)
-![Design preview for daytime mobile layout](src\assets\react-clock-app-tablet-daytime.jpg)
+![Design preview for daytime desktop layout](src/assets/react-clock-app-desktop-daytime.jpg)
+![Design preview for nighttime desktop layout](src/assets/react-clock-app-desktop-nighttime.jpg)
+![Design preview for daytime tablet layout](src/assets/react-clock-app-mobile-daytime.jpg)
+![Design preview for daytime mobile layout](src/assets/react-clock-app-tablet-daytime.jpg)
 
 ### Links
 
