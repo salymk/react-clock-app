@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import { DateTime } from 'luxon';
-import { Helmet } from 'react-helmet';
 import Quote from './components/Quote';
 import Time from './components/Time';
 import MoreInfo from './components/MoreInfo';
@@ -26,14 +25,6 @@ function App() {
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Clock App</title>
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="upgrade-insecure-requests"
-        />
-      </Helmet>
       <main
         className={`app-container ${toggle ? 'app-container-toggle' : ''} ${
           dayTime ? 'bg-day' : 'bg-night'
