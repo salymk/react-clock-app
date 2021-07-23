@@ -173,12 +173,20 @@ button:hover .arrow-svg circle {
   position: absolute;
   display: grid;
   align-items: center;
-  background-color: #ffff;
   width: 100%;
   bottom: 0;
   height: 40%;
-  color: #303030;
   opacity: .95;
+}
+
+.more-info-day {
+  background-color: #ffff;
+  color: #303030;
+}
+
+.more-info-night {
+  background-color: #000000;
+  color: #ffff;
 }
 
 .more-info-container {
@@ -368,7 +376,7 @@ button:hover .arrow-svg circle {
   }
   
   .bg-night {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-daytime.jpg") center center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("./assets/desktop/bg-image-nighttime.jpg") center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
