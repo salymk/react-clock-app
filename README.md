@@ -6,6 +6,7 @@ This is a solution to the [Clock app challenge on Frontend Mentor](https://www.f
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Expected Behaviour](#expected-behaviour)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -14,7 +15,6 @@ This is a solution to the [Clock app challenge on Frontend Mentor](https://www.f
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -50,13 +50,15 @@ Users should be able to:
 
 ![Design preview for daytime desktop layout](src/assets/react-clock-app-desktop-daytime.jpg)
 ![Design preview for nighttime desktop layout](src/assets/react-clock-app-desktop-nighttime.jpg)
-![Design preview for daytime tablet layout](src/assets/react-clock-app-mobile-daytime.jpg)
-![Design preview for daytime mobile layout](src/assets/react-clock-app-tablet-daytime.jpg)
+![Design preview for daytime tablet layout](src/assets/react-clock-app-tablet-daytime.jpg)
+![Design preview for daytime mobile layout](src/assets/react-clock-app-mobile-daytime.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/react-clock-app-Ao-91TaCf)
-- Live Site URL: [Add live site URL here](https://react-clock-app.vercel.app/)
+- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/react-clock-app-Ao-91TaCf)
+- Live Site URL: [https://react-clock-app.vercel.app/](https://react-clock-app.vercel.app/)
+
+## My process
 
 ### Built with
 
