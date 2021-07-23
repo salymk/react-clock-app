@@ -170,13 +170,15 @@ button:hover .arrow-svg circle {
 }
 
 .more-info {
-  position: absolute;
+  /* position: absolute; */
   display: grid;
   align-items: center;
   width: 100%;
   bottom: 0;
-  height: 40%;
+  /* height: 40%; */
   opacity: .95;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .more-info-day {
