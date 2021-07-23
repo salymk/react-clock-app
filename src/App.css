@@ -180,13 +180,15 @@ button:hover .arrow-svg circle {
 }
 
 .more-info-day {
-  background-color: #ffff;
   color: #303030;
+  background: rgb(247, 247, 247);
+  backdrop-filter: blur(40.7742px);
 }
 
 .more-info-night {
-  background-color: #000000;
   color: #ffff;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(40.7742px);
 }
 
 .more-info-container {
@@ -256,6 +258,13 @@ button:hover .arrow-svg circle {
 @media screen and (min-width: 768px) {
   .app-container {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .time-container {
+    margin-top: 5em;
   }
 
   .bg-day {
@@ -366,6 +375,9 @@ button:hover .arrow-svg circle {
 
   .app-container {
     min-height: 100vh;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 100%;
   }
 
   .bg-day {
