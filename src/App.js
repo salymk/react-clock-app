@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'normalize.css';
 import './App.css';
 import { DateTime } from 'luxon';
 import Quote from './components/Quote';
